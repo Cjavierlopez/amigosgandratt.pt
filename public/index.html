@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const form = document.querySelector('form');
+    const checkbox = form.querySelector('input[type='checkbox']');
+    const submitButton = form.querySelector('button[type='submit']');
+
+    checkbox.addEventListener('change', () => {
+      submitButton.disabled = !checkbox.checked;
+    });
+
+  </script>
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Passeio Amigos Gandra TT</title>
+</head>
+<body>
+  <main class="grid">
+    <figcaption class="desing sec1">
+      <div class="h1"></div>
+      <img class="header" src="/images/header.jpg" alt="Roda de mota">
+    </figcaption>
+    <section>
+      <div class="title">
+        <h1>AMIGOS GANDRA</h1>
+      </div>
+      <div class="title2">
+        <h1>TT</h1>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <p>Queres divertir-te e participar no passeio TT na Cidade de Gandra?</p>
+      <p>Não perca a oportunidade!</p>
+      <p>Vai se realizar dia 29 Abril 2023 o 16º passeio TT na cidade de Gandra-Paredes para moto, moto4 e jipes!</p>
+      <ul>
+        <li>
+          <p>
+            08:30h Abertura da secretaria e pequeno-almoço.
+          </p>
+        </li>
+        <li>
+          <p>
+            09:00h Inicio do passeio.    
+          </p>
+        </li>
+        <li>
+          <p>
+            12:30h Almoço.
+          </p>
+        </li>
+        <li>
+          <p>
+            17:30h Lanche.             
+          </p>
+        </li>
+        <li>
+          <p>
+            20:00h Jantar.            
+          </p>
+        </li>
+      </ul>
+      <p>Vamos aproveitar para fazer uma homenagem ao nosso eterno amigo Jorge Marfon.</p>
+      <p>As inscrições serão online ate 22/04/2023 ou no dia do passeio</p>
+      <ul>
+        <li>
+          <p>
+            Valor por pessoa no dia: 35,00€
+          </p>
+        </li>
+        <li>
+          <p>
+            Valor por pessoa inscrição online: 30,00€
+          </p>
+        </li>
+      </ul>
+      <p>
+        Crianças Inferiores de 10anos: grátis
+      </p>
+      <p>
+        Dificuldade: média – baixa
+
+        Com limite de inscrições
+      </p>
+      <ul>
+        <li>
+          <p>
+            Qualquer dúvida ou esclarecimento:
+          </p>
+        </li>
+        <li>
+          <p>
+            <img class="imgMovel" src="../images/phone.png" alt="telémovel">
+            Luís
+            <a class="movel" href="tel:+351-919445306">919 445 306</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <img class="imgMovel" src="../images/phone.png" alt="telémovel">
+            Pedro
+            <a class="movel" href="tel:+351-917662533">917 662 533</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sec3" >
+      <form id="form" class="field1" action="/form" method="post">
+      <div class="former">
+        <div class="square">
+          <fieldset class="field1">
+            <legend>Dados de participação</legend>
+    
+            <ul>
+              <li>
+                <label for="full_name"></label>
+                <input type="text" id="full_name" name="full_name" placeholder="NOME COMPLETO">
+                <hr>
+              </li>
+              <li>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="EMAIL">
+                <hr>
+              </li>    
+            </ul>
+          </fieldset>
+        </div>
+
+      <figcaption class="field2">
+        <img src="../images/flyerAGTT.jpg" alt="flyer amigos gandra tt">
+      </figcaption>
+      </div>
+    <fieldset class="field3">
+        <legend>Desejo reservar</legend>
+
+        <ul>
+          <li>
+            <img src="../images/iconMoto.png" alt="icono mota">
+            <label for="mota"></label>
+            <input type="number" inputmode="numeric" name="mota" id="mota" maxlength="10" minlength="0" placeholder="0">
+            <hr>
+            <p>MAX. 1 pessoas</p>
+          </li>
+          <li>
+            <img src="../images/iconMoto4.png" alt="icono mota cuatro">
+            <label for="mota4"></label>
+            <input type="number" inputmode="numeric" name="mota4" id="mota4" maxlength="10" minlength="0" placeholder="0">
+            <hr>
+            <p>MAX. 2 pessoas</p>
+          </li>
+          <li>
+            <img src="../images/iconJeep.png" alt="icono jeep">
+            <label for="jeep"></label>
+            <input type="number" inputmode="numeric" name="jeep" id="jeep" maxlength="10" minlength="0" placeholder="0">
+            <hr>
+            <p>MAX. 5 pessoas</p>
+            <!-- <label for="jeepChild"></label>
+            <input type="number" inputmode="numeric" name="jeep"> -->
+          </li>
+        </ul>
+        <div>
+          <label class="chb" for="checko">
+            <input type="checkbox" id="checko" name="checko" required>
+            Aceito o tratamento de meus dados e política de privacidade</label>
+        </div>
+      </fieldset>
+      <div class="btn">
+        <button id="submit-btn" class="field4" type="submit">Enviar</button>
+        <figcaption class="absolute">
+          <img src="../images/logoAmigosTT.png" alt="LogoBrand Amigos Gandra TT">
+      </figcaption>
+      </div>
+    </form>
+  </section>
+  <section class="sec4">
+      <div class="dFooter">
+        <p>©️ 2023 Delegação de festas Gandra | Created by <a href="www.info-exe.com">Info eXe</a></p>
+
+        <figcaption class="logoInfo">
+          <img src="../images/logo_infoexe.png" alt="LogoBrand info-exe">
+        </figcaption>
+        
+      </div>
+      
+      <div class="footer"></div>
+      <figcaption class="desing2">
+        <img class="footerImg" src="../images/footer.jpg" alt="Rodas de motas de motocross">
+      </figcaption>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>

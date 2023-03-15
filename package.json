@@ -1,0 +1,28 @@
+{
+  "name": "formulario",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "initDB": "node db/initDB.js"
+  },
+  "author": "WDC",
+  "license": "ISC",
+  "description": "wp for amigosgandratt",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.2.0",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4",
+    "standart": "^6.1.0"
+  }
+}
